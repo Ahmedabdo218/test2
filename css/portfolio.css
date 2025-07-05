@@ -1,0 +1,228 @@
+:root {
+  --main-color: #1A1A1A;
+  --text-color: #C1C1C1;
+  --active-color: #4FC3F7;
+  --white-color: #FFFFFF;
+  --p-color: #E1E1E1;
+}
+body {
+  background-color: var(--main-color);
+}
+.main-text {
+  color: var(--white-color);
+  font-size: 60px;
+  text-align: center;
+}
+h4 .gradient-text {
+  background: linear-gradient(90deg, #4FC3F7 0%, #FFFFFF 100%);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 15px;
+}
+  .text {
+  color: var(--p-color);
+  font-size: 20px;
+  text-align: center;
+}
+@media (max-width: 1025px) {
+  .main-text {
+    font-size: 30px;
+    text-align: center;
+  }
+  h4 {
+    font-size: 10px;
+    text-align: center;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+  }
+}
+  .btn-custom {
+  margin-top: 20px;
+  width: 170px;
+  height: 50px;
+  padding: 10px 10px;
+  border: 1px solid #4FC3F7;
+  border-radius: 30px;
+  color: var(--white-color);
+  font-size: 15px;
+}
+@media (max-width: 1025px) {
+  .btn-custom {
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+    padding: 5px 5px;
+  }
+}
+/* navbar */
+.nav-link{
+  color: var(--text-color);
+}
+.nav-link:hover {
+  color: var(--active-color);
+}
+.active {
+  color: var(--active-color) !important;
+}
+.nav-btn {
+  color: var(--white-color);
+  border: 1px solid #4FC3F7;
+  border-radius: 7px;
+}
+.btn:hover {
+  background-color: #4FC3F7;
+  color: var(--white-color);
+}
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggler .toggler-A,
+.navbar-toggler .toggler-B,
+.navbar-toggler .toggler-C {
+  display: block;
+  background-color:#fefefe;
+  margin: 5px auto;
+  transition: 0.3s;
+}
+.navbar-toggler .toggler-A {
+  width: 15px;
+  height: 2PX;
+    transform: translate(-8px);
+}
+.navbar-toggler .toggler-B {
+  width: 30px;
+  height: 2PX;
+}
+.navbar-toggler .toggler-C {
+  width: 15px;
+  height: 2PX;
+  transform: translateX(8px);
+}
+.navbar-toggler:hover .toggler-A {
+  width: 30px;
+  height: 2px;
+  transform: translateX(0);
+}
+.navbar-toggler:hover .toggler-C {
+  width: 30px;
+  height: 2px;
+  transform: translateX(0);
+}
+.navbar-toggler:hover .nav-link {
+  display: block;
+}
+/* Landing Page */
+.landing {
+  background: url('../img/landing.png') no-repeat center center;
+  background-size: cover;
+  width: 1025px;
+  height: 764px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+@media (max-width: 1025px) {
+  .landing {
+    width: 339px;
+    height: 564px;
+    background-position: center;
+  }
+}
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (max-width: 1025px) {
+  .photo {
+    width: 202px;
+    height: 197px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+.gradient-text-main {
+  background: linear-gradient(90deg, #4FC3F7 0%, #FFFFFF 100%);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  display: inline-block;
+}
+/* About Section */
+.about .main-text{
+  color: var(--white-color);
+  font-size: 60px;
+}
+/* Service Section */
+.service-card {
+  background: linear-gradient(150deg, rgba(56, 56, 56, 0.432) 0%,  rgba(43, 43, 43, 1) 100%);
+  border-radius: 7px;
+  border: 1px solid #c1c1c130;
+  width: 410px;
+}
+.service-card h5 {
+  color: var(--white-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.service-card p {
+  color: var(--p-color);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.service-card .icon {
+  background-color: var(--white-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-card .icon img {
+  width: 30px;
+  height: 30px;
+}
+.rectangle {
+  background: linear-gradient(150deg, rgba(77, 77, 77, 0.781) 0%,  rgba(43, 43, 43, 1) 100%);
+  border-radius: 7px;
+  border: 1px solid #c1c1c130;
+  gap: 20px;
+}
+.rectangle h5 {
+  color: var(--white-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.rectangle p {
+  color: var(--p-color);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.rectangle img {
+  width: 330px;
+  height: 260px;
+  border-radius: 7px;
+}
+.rectangle .icon {
+  background-color: var(--white-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle .icon img {
+  width: 30px;
+  height: 30px;
+}
+
